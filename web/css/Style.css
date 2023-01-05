@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+body{
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #68B984;
+}
+#header a.Cover h1{
+    text-transform: uppercase;
+    color: #ffff;
+}
+button.logout_btn{
+    padding: 9px 25px;
+    background-color: #3D5656;
+    border-radius: 8px;
+    border: 1px solid #3D5656;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+button.logout_btn:hover{
+    color: #3D5656;
+    background-color: transparent;
+    border: 2px solid #3D5656;
+
+}
+section{
+    margin: 40px;
+}
+span{
+    color: #3D5656;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 30px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.isi {
+    flex: 0 0 33%;
+    max-width: 33%;
+    text-align: center;
+}
+h3{
+    font-size: 18px;
+    margin: 15px;
+    color: #993f7b;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.container-1{
+    justify-content: center;
+    color: #3D5656;
+}
+h2{
+    text-align: left;
+    padding: 12px;
+    font-size: 24px;
+}
+
+@media (max-width: 9991px){
+    .isi {
+        flex : 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .isi {
+        flex : 0 0 100%;
+        max-width: 100%;
+    }
+}

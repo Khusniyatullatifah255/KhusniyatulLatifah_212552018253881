@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+a{
+    text-decoration: none;
+}
+body {
+  position: relative;
+  background: linear-gradient( #68B984, #3D5656) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+::selection {
+  color: #ececec;
+  background: #3D5656;
+}
+.form {
+  position: relative;
+  background: #f2f3f7;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: -3px 3px 10px -5px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+.form h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.form p {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+.form form {
+  margin: 8px 0;
+}
+form i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: #333;
+  z-index: 100;
+  pointer-events: none;
+  cursor: pointer;
+}
+.form form .error-text{
+    display: none;
+    color: 3D5656;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: #ffe3ef;
+    border: 1px solid #dfa5ab;
+    margin-bottom: 8px;
+}
+.form .grid-details{
+    display: flex;
+}
+.form .grid-details .input:first-child{
+    margin-right: 8px;
+    width: 100%;
+}
+.form .grid-details .input:last-child{
+    margin-left: 8px;
+    width: 100%;
+}
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.form form .input input:focus,
+.form form .input input:valid{
+    border: 2px solid #68B984;
+    transition: 0.1s ease;
+    outline: none;
+}
+.form form input.button{
+    height: 45px;
+    border: none;
+    color: #f2f3f7;
+    width: 100%;
+    background: #3D5656;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+}
+.form form input.button:hover,
+  .form form input.button:focus{
+  background: transparent;
+  border: 2px solid #3D5656;
+  color: #3D5656;
+}
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.form .link a{
+    color: #3D5656;
+    transition: 0.5s all;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
+.form form .remember{
+    font-size: 14px;
+    margin: 10px 0;
+}
+@media only screen and (max-width: 455px){
+}
